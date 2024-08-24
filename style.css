@@ -115,3 +115,9 @@ nav .circle {
 .controls i{
     font-size: 2rem;;
 }
+
+#duration {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 18px;    
+}
