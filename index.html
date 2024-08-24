@@ -15,7 +15,7 @@
         <div class="music-player">
 
             <nav>
-                <div class="circle">
+                <div class="circle" onclick="prevSong()" >
                     <i class='bx bx-chevron-left'></i>
                 </div>
                 <div class="circle">
@@ -23,19 +23,21 @@
                 </div>
             </nav>
 
-            <img src="assets/thumnail.png" class="song-img" alt="thumnail image">
-            <h1>Perfect</h1>
-            <p>Ed Sheeran</p>
+            <img src="assets/thumnail(perfect).png" class="song-img" id="songImg" >
+            <h1 id="songTitle">Perfect</h1>
+            <p id="songSinger">Ed Sheeran</p>
             <audio id="song">
                 <source src="assets/Perfect.mp3" type="audio/mpeg">
+                <source src="assets/Night-Changes-One-Direction.mp3" type="audio/mpeg">
+                <source src="assets/Until-I-Found-You.mp3" type="audio/mpeg">
             </audio>
             <input type="range" value="0" id="progress">  
             <p id="duration">0:00 / 0:00</p>
 
             <div class="controls">
-                <div><i class='bx bx-skip-previous'></i></div>
+                <div onclick="prevSong()"><i class='bx bx-skip-previous'></i></div>
                 <div onclick="playPause()"> <i class='bx bx-play' id="ctrlIcon"></i></div>
-                <div><i class='bx bx-skip-next'></i></div>
+                <div onclick="nextSong()"><i class='bx bx-skip-next'></i></div>
             </div>
 
         </div>

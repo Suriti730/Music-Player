@@ -43,15 +43,20 @@ nav .circle {
     align-items: center;
 }
 
-.circle i{
+.circle i {
     font-size: 1.5rem;
 }
 
 .song-img {
     width: 220px;
+    height: 220px;
     border-radius: 50%;
     border: 8px solid #fff;
     box-shadow: 0 10px 60px rgba(255, 26, 26, 0.22);
+    object-fit: cover;
+    background-image: url('assets/default-thumbnail.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .music-player h1 {
@@ -105,19 +110,20 @@ nav .circle {
     box-shadow: 0 10px 20px rgba(255, 26, 26, 0.22);
     cursor: pointer;
 
-    &:nth-child(2){
+    &:nth-child(2) {
         transform: scale(1.5);
         background: #f53192;
         color: #fff;
     }
 }
 
-.controls i{
-    font-size: 2rem;;
+.controls i {
+    font-size: 2rem;
+    ;
 }
 
 #duration {
     font-size: 14px;
     color: #333;
-    margin-bottom: 18px;    
+    margin-bottom: 18px;
 }
