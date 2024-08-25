@@ -22,8 +22,6 @@ function loadSong(index) {
     songTitle.textContent = songData.title;
     songSinger.textContent = songData.singer;
     song.load();
-    song.play();
-    updateDuration();
     ctrlIcon.classList.add("bx-pause");
     ctrlIcon.classList.remove("bx-play");
 }
@@ -67,6 +65,7 @@ song.onloadedmetadata = function () {
     progress.max = song.duration;
     progress.value = song.currentTime;
     updateDuration();
+    song.play();
 }
 
 if (song.play()) {
