@@ -78,7 +78,7 @@ nav .circle {
     background: #f53192;
     border-radius: 4px;
     cursor: pointer;
-    margin: 40px 0;
+    margin: 40px 0 14px 0;
 
     &::-webkit-slider-thumb {
         -webkit-appearance: none;
@@ -124,5 +124,8 @@ nav .circle {
 #duration {
     font-size: 14px;
     color: #333;
-    margin-bottom: 18px;
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }

@@ -35,9 +35,9 @@ function updateDuration() {
     if (currentSeconds < 10) { currentSeconds = "0" + currentSeconds; }
     if (durationSeconds < 10) { durationSeconds = "0" + durationSeconds; }
 
-    document.getElementById("duration").textContent = `${currentMinutes}:${currentSeconds} / ${durationMinutes}:${durationSeconds}`;
+    document.querySelector(".time-current").textContent = `${currentMinutes}:${currentSeconds}`;
+    document.querySelector(".time-duration").textContent = `${durationMinutes}:${durationSeconds}`;
 }
-
 function nextSong() {
     currentSongIndex = (currentSongIndex + 1) % songs.length;
     loadSong(currentSongIndex);

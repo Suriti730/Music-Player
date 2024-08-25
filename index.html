@@ -32,8 +32,11 @@
                 <source src="assets/Until-I-Found-You.mp3" type="audio/mpeg">
             </audio>
             <input type="range" value="0" id="progress">  
-            <p id="duration">0:00 / 0:00</p>
-
+            <div id="duration">
+                <span class="time-current">0:00</span>
+                <span class="time-duration">0:00</span>
+            </div>
+            
             <div class="controls">
                 <div onclick="prevSong()"><i class='bx bx-skip-previous'></i></div>
                 <div onclick="playPause()"> <i class='bx bx-play' id="ctrlIcon"></i></div>
